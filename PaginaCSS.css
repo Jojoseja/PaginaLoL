@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tier-list {
+    margin-bottom: 40px;
+}
+
+.tier-row {
+    display: flex;
+    min-height: 100px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.tier-label {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.tier-content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    min-height: 100px;
+    border: 2px dashed #ccc;
+}
+
+.image-pool {
+    margin-top: 40px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.tier-image, .pool-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    cursor: grab;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tier-image {
+    margin: 5px;
+}
+
+/* Tier label colors */
+.S-tier { background-color: #ff7f7f; }
+.A-tier { background-color: #ffbf7f; }
+.B-tier { background-color: #ffdf7f; }
+.C-tier { background-color: #ffff7f; }
+.D-tier { background-color: #bfff7f; }
+.F-tier { background-color: #7fff7f; }
+.tier-image-container {
+    position: relative;
+    margin: 5px;
+    display: inline-block;
+}
+
+.tier-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    cursor: grab;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.remove-image-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff4444;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.remove-image-btn:hover {
+    background-color: #cc0000;
+}
+/* Add this to improve drag-and-drop visibility */
+.tier-content.drag-over {
+    background-color: #e0e0e0;
+    border-color: #666 !important;
+}
+
+.tier-image-container.dragging {
+    opacity: 0.5;
+}
