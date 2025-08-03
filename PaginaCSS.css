@@ -1,0 +1,91 @@
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color:#27272a;
+    --tier-bg-color: #404040;
+    --tier-control-bg-color: #262626;
+    --border-color: #0a0a0a;
+    --card-size: 75px;
+}
+
+body{
+    background: var(--bg-color)
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+    user-select: none;
+}
+
+img{
+    width: var(--card-size);
+    aspect-ratio: 1;
+    object-fit: cover;
+    cursor: grab;
+}
+
+img.dragging {
+    opacity: 0.25;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+
+.container {
+    width: min(1200px, 80%);
+    margin: auto;
+    border: 2px solid var(--border-color);
+}
+
+.tier {
+    background: var(--tier-bg-color);
+    display: flex;
+    gap: 2px;
+}
+
+.tier:not(:last-child) {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.label {
+    flex-shrink: 0;
+    width: 100px;
+    min-height: var(--card-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color, lightcoral);
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1rem;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.label span {
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.items {
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex:1;
+}
+
+.controls {
+    width: 50px;
+    background: var(--tier-control-bg-color);
+    display:grid;
+    align-content: center;
+}
