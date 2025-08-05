@@ -89,3 +89,36 @@ button {
     display:grid;
     align-content: center;
 }
+
+.controls button {
+    font-size: 1rem;
+    background: transparent;
+    color: #fff;
+}
+
+.controls button:is(:active, :hover) {
+    opacity: 1;
+}
+
+@media(min-width: 768px){
+    .controls {
+        grid-template-columns: repeat(2, 1fr);
+        width: 64px;
+    }
+
+    .controls .settings {
+        grid-row: span 2;
+    }
+
+    .controls button {
+        font-size: 1.5rem;
+    }
+}
+.cards {
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    min-height: calc(var(--card-size) * 2);
+    background: var(--tier-bg-color);
+}
