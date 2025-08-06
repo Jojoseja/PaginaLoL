@@ -1,5 +1,5 @@
 # Based on the video from:
-minute> 8:50
+minute> 14:20
 (Refined Guides)[https://www.youtube.com/watch?v=LW_6_P-ePPY&t=484s]
 
 ## Featured Covered
