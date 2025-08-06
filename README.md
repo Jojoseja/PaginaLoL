@@ -1,7 +1,5 @@
 # Based on the video from:
-minute> 14:20
-(Refined Guides)[https://www.youtube.com/watch?v=LW_6_P-ePPY&t=484s]
-
+[Refined Guides](https://www.youtube.com/watch?v=LW_6_P-ePPY&)
 ## Featured Covered
 
 - [x] Create Tier
