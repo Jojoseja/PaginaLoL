@@ -3,7 +3,7 @@ import { colors } from './colors.js'
 const settingsModal = document.querySelector(".settings-modal");
 const colorsContainer = settingsModal.querySelector(".colors");
 const tiersContainer = document.querySelector(".tiers");
-
+const images = document.querySelectorAll('.cards img');
 let activeTier;
 
 const resetTierImages = (tier) => {
@@ -146,7 +146,6 @@ const initDefaultTierList = (params) => {
 }
 
 const initDraggables = () => {
-    const images = document.querySelectorAll('.cards img');
     images.forEach((img) => {
         img.draggable = true;
 
@@ -197,3 +196,20 @@ colorsContainer.addEventListener("change", (event) => {
         activeTier.querySelector(".label").style.setProperty("--color", event.target.value);
     }
 });
+
+//search input
+
+const searchInput = document.querySelector('.search-bar');
+searchInput.addEventListener('input', e => {
+    const value = e.target.value.trim().toLowerCase();
+    console.log(value);
+
+    images.forEach(img => {
+        const matches = img.alt.toLowerCase().includes(value);
+        if (value === '' || matches) {
+        img.classList.remove('hidden');
+      } else {
+        img.classList.add('hidden');
+      }
+    })
+})

@@ -222,3 +222,13 @@ button {
 .settings-modal button:is(:active, :hover) {
     background: lightgray;
 }
+
+
+.search-bar {
+    padding: 10px;
+    width: 40%;
+    margin-top: 2rem;
+}
+.hidden {
+  display: none;
+}

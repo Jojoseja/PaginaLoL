@@ -4,16 +4,16 @@ minute> 14:20
 
 ## Featured Covered
 
-- [ ] Create Tier
-- [ ] Arrange Items using Drag and Drop
-- [ ] Move Tiers Up/Down
-- [ ] Toggle Settings Modal
-- [ ] Edit Tier Color And Label
-- [ ] Delete Tier List
-- [ ] Clear Tier Items
-- [ ] Add Tier Below or Above
+- [x] Create Tier
+- [x] Arrange Items using Drag and Drop
+- [x] Move Tiers Up/Down
+- [x] Toggle Settings Modal
+- [x] Edit Tier Color And Label
+- [x] Delete Tier List
+- [x] Clear Tier Items
+- [x] Add Tier Below or Above
 
 ## Future Features
 
-- [ ] Search Bar for Champions
+- [x] Search Bar for Champions
 - [ ] Preselect Positions / Classes
