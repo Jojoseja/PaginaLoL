@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root {
-    --bg-color:#27272a;
+    --bg-color:#202020;
     --tier-bg-color: #404040;
     --tier-control-bg-color: #262626;
     --border-color: #0a0a0a;
@@ -28,7 +28,7 @@ h1{
     user-select: none;
 }
 
-img{
+img {
     width: var(--card-size);
     aspect-ratio: 1;
     object-fit: cover;
@@ -48,7 +48,7 @@ button {
 .container {
     width: min(1200px, 80%);
     margin: 0 auto;
-    border: 2px solid var(--border-color);
+    border: 0px solid var(--border-color);
 }
 
 .tiers:empty::before {
@@ -136,7 +136,7 @@ button {
     flex-wrap: wrap;
     margin-top: 2rem;
     min-height: calc(var(--card-size) * 2);
-    background: var(--tier-bg-color);
+    background: var(--bg-color);
 }
 
 .settings-modal[open] {

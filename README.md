@@ -14,4 +14,7 @@
 ## Future Features
 
 - [x] Search Bar for Champions
+- [ ] Change Settings for Search Bar (exclude from TierList)
 - [ ] Preselect Positions / Classes
+- [ ] Save as PNG / JSON
+- [ ] Move from PaginaLoL to Main Page -> Tier List, Draft, etc...
