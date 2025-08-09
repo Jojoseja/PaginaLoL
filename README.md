@@ -1,5 +1,6 @@
 # Based on the video from:
 [Refined Guides](https://www.youtube.com/watch?v=LW_6_P-ePPY&)
+
 ## Featured Covered
 
 - [x] Create Tier
@@ -14,6 +15,8 @@
 ## Future Features
 
 - [x] Search Bar for Champions
+- [ ] Move Champions back to Champion Pool
+- [ ] Order Champion Pool By Name
 - [ ] Change Settings for Search Bar (exclude from TierList)
 - [ ] Preselect Positions / Classes
 - [ ] Save as PNG / JSON
